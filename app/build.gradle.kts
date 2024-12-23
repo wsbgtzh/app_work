@@ -32,6 +32,8 @@ android {
 }
 
 dependencies {
+    implementation(libs.retrofit)
+    implementation(libs.converter.gson)
     implementation (libs.wechat.sdk.android)
     implementation(libs.appcompat)
     implementation(libs.material)
