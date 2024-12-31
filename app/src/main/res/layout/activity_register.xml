@@ -33,16 +33,25 @@
             android:inputType="textPassword"
             android:id="@+id/password" />
     </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="确认密码"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:endIconMode="password_toggle"
+        android:layout_marginTop="50dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:id="@+id/confirm_password" />
+    </com.google.android.material.textfield.TextInputLayout>
+
     <Button
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:id="@+id/login"
-        android:text="登录"
-        android:layout_marginTop="50dp" />
-    <Button
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:id="@+id/register"
-        android:text="注册"
+        android:id="@+id/confirm_register"
+        android:text="确认注册"
         android:layout_marginTop="50dp" />
 </LinearLayout>

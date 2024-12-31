@@ -23,5 +23,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".index.register.RegisterActivity"/>
+        <activity android:name=".index.pages.NavigationActivity"/>
+        <activity android:name=".index.pages.MySpaceActivity"/>
     </application>
 </manifest>
