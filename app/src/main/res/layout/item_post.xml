@@ -45,6 +45,8 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="Author"
+                android:textStyle="italic"
+                android:textSize="15sp"
                 android:textAppearance="?attr/textAppearanceCaption"
                 android:textColor="@android:color/black" />
 
@@ -52,6 +54,7 @@
                 android:id="@+id/post_created_date"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textSize="15sp"
                 android:text="2024-01-01"
                 android:textAppearance="?attr/textAppearanceCaption"
                 android:textColor="@android:color/darker_gray" />
@@ -62,6 +65,7 @@
             android:id="@+id/post_timestamp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textSize="12sp"
             android:text="2 hours ago"
             android:textAppearance="?attr/textAppearanceCaption"
             android:textColor="@android:color/holo_blue_light"
@@ -74,8 +78,14 @@
             android:orientation="horizontal"
             android:layout_marginTop="8dp">
 
+            <ImageButton
+                android:id="@+id/like_btn"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/like"/>
+
             <TextView
-                android:id="@+id/post_comment_count"
+                android:id="@+id/post_like_count"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -83,8 +93,14 @@
                 android:textAppearance="?attr/textAppearanceBody2"
                 android:textColor="@android:color/darker_gray" />
 
+            <ImageButton
+                android:id="@+id/comment_btn"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/comment"/>
+
             <TextView
-                android:id="@+id/post_like_count"
+                android:id="@+id/post_comment_count"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Likes: 0"

@@ -25,6 +25,9 @@
         </activity>
         <activity android:name=".index.register.RegisterActivity"/>
         <activity android:name=".index.pages.NavigationActivity"/>
-        <activity android:name=".index.pages.MySpaceActivity"/>
+        <activity android:name=".index.pages.post.PostActivity"/>
+        <activity android:name=".index.pages.post.PersonInfoActivity"/>
+        <activity android:name=".index.pages.FollowListActivity"/>
+        <activity android:name=".index.pages.ChatActivity" />
     </application>
 </manifest>

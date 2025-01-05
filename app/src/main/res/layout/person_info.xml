@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/item"
+    android:id="@+id/person_info"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -30,7 +30,6 @@
         android:orientation="horizontal"
         android:layout_marginTop="30dp">
         <ImageButton
-            android:id="@+id/fans_list_btn"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:background="@drawable/fans"
@@ -42,18 +41,17 @@
             android:textSize="15sp"
             android:textStyle="bold"
             android:layout_marginStart="10dp"/>
-
         <ImageButton
-            android:id="@+id/follow_list_btn"
+            android:id="@+id/follow_btn"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:background="@drawable/follow_list"
+            android:background="@drawable/unfollow"
             android:layout_marginStart="40dp"/>
         <TextView
             android:id="@+id/follow"
-            android:layout_width="2dp"
+            android:layout_width="30dp"
             android:layout_height="wrap_content"
-            android:textSize="25sp"
+            android:textSize="15sp"
             android:textStyle="bold"
             android:layout_marginStart="10dp"/>
 
@@ -62,7 +60,7 @@
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:background="@drawable/chat"
-            android:layout_marginStart="80dp"/>
+            android:layout_marginStart="40dp"/>
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -75,13 +73,6 @@
             android:textStyle="bold"
             android:textSize="20sp"
             android:layout_marginStart="60dp"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="关注列表"
-            android:textStyle="bold"
-            android:textSize="20sp"
-            android:layout_marginStart="60dp"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -89,37 +80,6 @@
             android:text="私信"
             android:textStyle="bold"
             android:textSize="20sp"
-            android:layout_marginStart="60dp"/>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="20dp"
-        android:orientation="vertical">
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginTop="30dp">
-            <ImageView
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:background="@drawable/my_post"/>
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="我的帖子："
-                android:textStyle="bold"
-                android:textSize="30sp"/>
-        </LinearLayout>
-
-        <androidx.recyclerview.widget.RecyclerView android:id="@+id/recycler_view"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_margin="8dp"
-            android:scrollbars="vertical"
-            xmlns:android="http://schemas.android.com/apk/res/android" />
+            android:layout_marginStart="190dp"/>
     </LinearLayout>
 </LinearLayout>

@@ -12,6 +12,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 
 import androidx.activity.result.ActivityResultLauncher;
@@ -54,7 +55,8 @@ public class SquareFragment extends Fragment {
         //post_btn.setOnClickListener(v-> showButtonSheetDialog());
         UserRepository userRepository = new UserRepository(requireContext());
         RecyclerView recyclerView = rootView.findViewById(R.id.recycler_view);
-        recyclerView.setLayoutManager(new LinearLayoutManager(requireContext()));
+        LinearLayoutManager layoutManager = new LinearLayoutManager(requireContext());
+        recyclerView.setLayoutManager(layoutManager);
         userRepository.getAllPost(recyclerView);
         // 初始化图片选择器
         initImagePicker();
@@ -62,6 +64,8 @@ public class SquareFragment extends Fragment {
         // 设置悬浮按钮点击事件
         FloatingActionButton fabAddPost = rootView.findViewById(R.id.post);
         fabAddPost.setOnClickListener(v -> showButtonSheetDialog());
+        View itemView = inflater.inflate(R.layout.item_post, container, false);
+        //ImageButton like_btn = itemView.findViewById(R.id.like_btn);
         return rootView;
     }
 

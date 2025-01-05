@@ -32,6 +32,7 @@ android {
 }
 
 dependencies {
+    implementation(libs.circleimageview)
     implementation(libs.glide)
     implementation(libs.material.vversion)
     implementation(libs.retrofit)

@@ -68,10 +68,8 @@ public class IndexActivity extends AppCompatActivity {
                     System.out.println(info);
                     String username = info.get("username");
                     Integer fans = Integer.parseInt(info.get("fans"));
-                    Integer follow = Integer.parseInt(info.get("follow"));
                     GlobalData.getInstance().setUsername(username);
                     GlobalData.getInstance().setFans(fans);
-                    GlobalData.getInstance().setFollow(follow);
                     Intent intent = new Intent(IndexActivity.this, NavigationActivity.class);
                     startActivity(intent);
                     finish();

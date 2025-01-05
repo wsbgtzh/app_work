@@ -8,7 +8,7 @@ public class GlobalData {
     private static GlobalData instance;
     private String username;
     private Integer fans;
-    private Integer follow;
+    private String follow;
     private List<Map<String, String>> posts = new ArrayList<>();
 
     private GlobalData() {
@@ -46,11 +46,11 @@ public class GlobalData {
         return fans;
     }
 
-    public void setFollow(Integer follow) {
+    public void setFollow(String follow) {
         this.follow = follow;
     }
 
-    public Integer getFollow() {
+    public String getFollow() {
         return follow;
     }
 }
